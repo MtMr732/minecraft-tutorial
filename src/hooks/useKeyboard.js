@@ -2,10 +2,10 @@ import React, { useCallback, useEffect, useState } from "react";
 
 function actionByKey(key) {
   const keyActionMap = {
-    keyW: "moveForward",
-    keyS: "moveBackward",
-    keyA: "moveLeft",
-    keyD: "moveRight",
+    KeyW: "moveForward",
+    KeyS: "moveBackward",
+    KeyA: "moveLeft",
+    KeyD: "moveRight",
     Space: "jump",
     Digit1: "dirt",
     Digit2: "grass",
