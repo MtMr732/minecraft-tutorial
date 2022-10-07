@@ -1,8 +1,18 @@
 import { TextureLoader } from "three";
 import { dirtImg, grassImg, glassImg, woodImg, logImg } from "./images";
 
-export const dirtTexture = new TextureLoader(dirtImg);
-export const grassTexture = new TextureLoader(grassImg);
-export const glassTexture = new TextureLoader(glassImg);
-export const woodTexture = new TextureLoader(woodImg);
-export const logTexture = new TextureLoader(logImg);
+const dirtTexture = new TextureLoader().load(dirtImg);
+const grassTexture = new TextureLoader().load(grassImg);
+const glassTexture = new TextureLoader().load(glassImg);
+const woodTexture = new TextureLoader().load(woodImg);
+const logTexture = new TextureLoader().load(logImg);
+const groundTexture = new TextureLoader().load(grassImg);
+
+export {
+  dirtTexture,
+  logTexture,
+  grassTexture,
+  glassTexture,
+  woodTexture,
+  groundTexture,
+};
