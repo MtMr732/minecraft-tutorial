@@ -38,7 +38,7 @@ export const useKeyboard = () => {
       setActions((prev) => {
         return {
           ...prev,
-          [actions]: true,
+          [action]: true,
         };
       });
     }
@@ -51,7 +51,7 @@ export const useKeyboard = () => {
       setActions((prev) => {
         return {
           ...prev,
-          [actions]: false,
+          [action]: false,
         };
       });
     }
