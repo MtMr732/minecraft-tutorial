@@ -32,7 +32,7 @@ export const useKeyboard = () => {
 
   // 押下するボタンだけ値をtrueに
   const handleKeyDown = useCallback((e) => {
-    console.log(e);
+    // console.log(e);
     const action = actionByKey(e.code);
     if (action) {
       setActions((prev) => {
