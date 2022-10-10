@@ -42,7 +42,7 @@ export const useKeyboard = () => {
         };
       });
     }
-  });
+  }, []);
 
   // 押下されていない状態に戻るボタンの値をfalseに
   const handleKeyUp = useCallback((e) => {
@@ -55,7 +55,7 @@ export const useKeyboard = () => {
         };
       });
     }
-  });
+  }, []);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
