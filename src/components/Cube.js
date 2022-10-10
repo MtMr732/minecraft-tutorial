@@ -1,6 +1,7 @@
 import { useBox } from "@react-three/cannon";
+import { useState } from "react";
 import { useStore } from "../hooks/useStore";
-import * as textures from "../images/texures";
+import * as textures from "../images/textures";
 
 export const Cube = ({ position, texture }) => {
   const [ref] = useBox(() => ({
@@ -23,22 +24,22 @@ export const Cube = ({ position, texture }) => {
         if (e.altKey) {
           removeCube(x, y, z);
           return;
-        } else if (clickedFace == 0) {
+        } else if (clickedFace === 0) {
           addCube(x + 1, y, z);
           return;
-        } else if (clickedFace == 1) {
+        } else if (clickedFace === 1) {
           addCube(x - 1, y, z);
           return;
-        } else if (clickedFace == 2) {
+        } else if (clickedFace === 2) {
           addCube(x, y + 1, z);
           return;
-        } else if (clickedFace == 3) {
+        } else if (clickedFace === 3) {
           addCube(x, y - 1, z);
           return;
-        } else if (clickedFace == 4) {
+        } else if (clickedFace === 4) {
           addCube(x, y, z + 1);
           return;
-        } else if (clickedFace == 5) {
+        } else if (clickedFace === 5) {
           addCube(x - 1, y, z - 1);
           return;
         }
